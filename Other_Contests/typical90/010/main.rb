@@ -1,21 +1,18 @@
-N = gets.to_i
-cp = N.times.map { gets.split.map(&:to_i) }
-Q = gets.to_i
-lr = Q.times.map { gets.split.map(&:to_i) }
-c1_cs, c2_cs = 2.times.map { Array.new(N + 1) { 0 } }
-cp.each_with_index do |arr, i|
-  c, pt = arr
-  if c == 1
-    c1_cs[i + 1] = c1_cs[i] + pt
-    c2_cs[i + 1] = c2_cs[i]
-  else
-    c1_cs[i + 1] = c1_cs[i]
-    c2_cs[i + 1] = c2_cs[i] + pt
-  end
-end
-lr.each do |arr|
-  l, r = arr
-  a = c1_cs[r] - c1_cs[l - 1]
-  b = c2_cs[r] - c2_cs[l - 1]
-  puts [a, b].join(' ')
-end
+n = gets.to_i
+students = n.times.map { gets.split.map(&:to_i)}
+q = gets.to_i
+lr = q.times.map { gets.split.map(&:to_i) }
+c_arr = Array.new(2) {Array.new(n, 0)}
+students.each_with_index {|s, i|
+  c, po = s
+  c_arr[c-1][i] = po
+}
+cs = [[0], [0]]
+c_arr.each_with_index {|cl, i|
+  cl.each { |po|
+    cs[i] << cs[i][-1] + po
+  }
+}
+lr.each {|l, r|
+  puts "#{cs[0][r] - cs[0][l-1]} #{cs[1][r] - cs[1][l-1]}"
+}
