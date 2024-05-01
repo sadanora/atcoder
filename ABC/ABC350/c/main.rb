@@ -1,27 +1,15 @@
 n = gets.to_i
 a = gets.split.map(&:to_i).unshift(0)
 pos = [0]
-(1..n).each { |i| pos << a.index(i)}
+n.times.map { |i| pos[a[i+1]] = i + 1 }
 res = []
 (1..n).each {|i|
-  p a
-  p pos
+  next if i == pos[i]
 
-  if i == pos[i]
-    next
-  end
-  # [0,_3,_4,_1,_2,_5]
   res << [i, pos[i]]
-
-  a_l = a[i] # 3
-  a_r = a[pos[i]] # A[3] -> 1
-  a[pos[i]] = a_l
-  a[i] = a_r
-
-  pos_l = pos[i]
-  pos_r = pos[pos[i]]
-  pos[pos[i]] = pos_l
-  pos[i] = pos_r
+  j = pos[i]
+  pos[a[i]], pos[i] = pos[i], pos[a[i]]
+  a[j], a[i] = a[i], a[j]
 }
 puts res.size
 res.each{ puts _1.join(' ')}
