@@ -1,8 +1,13 @@
 n = gets.to_i
-cards = n.times.map { gets.split.map(&:to_i)}
-res = cards.map { |card|
-  cards.find_index{ card[0] < _1[0] && card[1] > _1[1]}
+arr = n.times.map{ |i| [i+1, *gets.split.map(&:to_i)] }
+arr.sort_by! { | i, a, c | -a }
+ans = []
+max_c = 10**10
+arr.each { | i, a, c|
+  if c < max_c
+    ans << i
+    max_c = c
+  end
 }
-ans = res.map.with_index{ |i, j| j.succ if i.nil? }.compact
 puts ans.size
-puts ans.join(' ')
+puts ans.sort.join(' ')

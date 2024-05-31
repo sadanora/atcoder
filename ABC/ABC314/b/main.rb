@@ -9,11 +9,11 @@ if winners.compact.size == 0
   puts ''
   exit
 end
-min_ans = winners.compact.map { _1.size }.min
+min_bets = winners.compact.map { _1.size }.min
 puts winners.compact.select { |winner|
-  winner.size == min_ans
+  winner.size == min_bets
 }.size
-res = winners.collect.with_index { |winner, i|
-  i+1 if winner && winner.size == min_ans
+b = winners.collect.with_index { |winner, i|
+  i+1 if winner && winner.size == min_bets
 }
-puts res.compact.join(' ')
+puts b.compact.join(' ')
