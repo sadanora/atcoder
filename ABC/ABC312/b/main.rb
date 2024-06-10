@@ -1,13 +1,37 @@
+def check(s, i, j)
+  (0..2).each do |ii|
+    (0..2).each do |jj|
+      return false if s[i + ii][j + jj] != '#'
+    end
+  end
+  (6..8).each do |ii|
+    (6..8).each do |jj|
+      return false if s[i + ii][j + jj] != '#'
+    end
+  end
+
+  (0..3).each do |ii|
+    return false if s[i + ii][j + 3] != '.'
+  end
+  (0..3).each do |jj|
+    return false if s[i + 3][j + jj] != '.'
+  end
+
+  (5..8).each do |ii|
+    return false if s[i + ii][j + 5] != '.'
+  end
+  (5..8).each do |jj|
+    return false if s[i + 5][j + jj] != '.'
+  end
+
+  true
+end
+
 n, m = gets.split.map(&:to_i)
 s = n.times.map { gets.chomp.split('') }
-(n-8).times { |i|
-  (m-8).times { |j|
-    next unless s[i][j] == '#' && s[i][j+1] == '#' && s[i][j+2] == '#' && s[i][j+3] == '.'
-    
-    if (s[i+1][j] == '#' && s[i+1][j+1] == '#' && s[i+1][j+2] == '#' && s[i+1][j+3] == '.')&& (s[i+2][j] == '#' && s[i+2][j+1] == '#' && s[i+2][j+2] == '#' && s[i+2][j+3] == '.') && (s[i+3][j] == '.' && s[i+2][j+1] == '.' && s[i+2][j+2] == '.' && s[i+2][j+3] == '.')
-      if (s[i+5][j+5] == '.' && s[i+5][j+6] == '.' && s[i+5][j+7] == '.' && s[i+5][j+8] == '.') && (s[i+6][j+5] == '.' && s[i+6][j+6] == '#' && s[i+6][j+7] == '#' && s[i+6][j+8] == '#') && (s[i+7][j+5] == '.' && s[i+7][j+6] == '#' && s[i+7][j+7] == '#' && s[i+7][j+8] == '#') && (s[i+8][j+5] == '.' && s[i+8][j+6] == '#' && s[i+8][j+7] == '#' && s[i+8][j+8] == '#')
-        puts "#{i+1}, #{j+1}"
-      end
-    end
-  }
-}
+
+(n - 8).times do |i|
+  (m - 8).times do |j|
+    puts "#{i + 1} #{j + 1}" if check(s, i, j)
+  end
+end
