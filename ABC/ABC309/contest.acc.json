@@ -20,7 +20,12 @@
       "id": "abc309_b",
       "label": "B",
       "title": "Rotate",
-      "url": "https://atcoder.jp/contests/ABC309/tasks/abc309_b"
+      "url": "https://atcoder.jp/contests/ABC309/tasks/abc309_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc309_c",
