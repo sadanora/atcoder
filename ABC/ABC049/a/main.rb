@@ -1,3 +1,1 @@
-input = gets.split.map(&:to_i)
-input = readlines.map(&:to_i)
-
+puts gets.chomp.match?(/[aiueo]/) ? 'vowel' : 'consonant'
