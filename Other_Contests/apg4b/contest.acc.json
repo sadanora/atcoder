@@ -326,7 +326,12 @@
       "id": "APG4b_cf",
       "label": "EX17",
       "title": "2.02",
-      "url": "https://atcoder.jp/contests/apg4b/tasks/APG4b_cf"
+      "url": "https://atcoder.jp/contests/apg4b/tasks/APG4b_cf",
+      "directory": {
+        "path": "ex17",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "APG4b_ce",
