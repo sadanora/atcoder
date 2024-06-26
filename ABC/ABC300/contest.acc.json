@@ -20,7 +20,12 @@
       "id": "abc300_b",
       "label": "B",
       "title": "Same Map in the RPG World",
-      "url": "https://atcoder.jp/contests/ABC300/tasks/abc300_b"
+      "url": "https://atcoder.jp/contests/ABC300/tasks/abc300_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc300_c",
