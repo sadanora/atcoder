@@ -20,7 +20,12 @@
       "id": "abc297_b",
       "label": "B",
       "title": "chess960",
-      "url": "https://atcoder.jp/contests/ABC297/tasks/abc297_b"
+      "url": "https://atcoder.jp/contests/ABC297/tasks/abc297_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc297_c",
