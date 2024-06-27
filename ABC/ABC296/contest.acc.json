@@ -20,7 +20,12 @@
       "id": "abc296_b",
       "label": "B",
       "title": "Chessboard",
-      "url": "https://atcoder.jp/contests/ABC296/tasks/abc296_b"
+      "url": "https://atcoder.jp/contests/ABC296/tasks/abc296_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc296_c",
