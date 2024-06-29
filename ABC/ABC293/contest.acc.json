@@ -20,7 +20,12 @@
       "id": "abc293_b",
       "label": "B",
       "title": "Call the ID Number",
-      "url": "https://atcoder.jp/contests/ABC293/tasks/abc293_b"
+      "url": "https://atcoder.jp/contests/ABC293/tasks/abc293_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc293_c",
