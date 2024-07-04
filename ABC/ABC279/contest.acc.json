@@ -20,7 +20,12 @@
       "id": "abc279_b",
       "label": "B",
       "title": "LOOKUP",
-      "url": "https://atcoder.jp/contests/ABC279/tasks/abc279_b"
+      "url": "https://atcoder.jp/contests/ABC279/tasks/abc279_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc279_c",
