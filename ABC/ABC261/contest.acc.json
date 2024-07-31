@@ -20,7 +20,12 @@
       "id": "abc261_b",
       "label": "B",
       "title": "Tournament Result",
-      "url": "https://atcoder.jp/contests/ABC261/tasks/abc261_b"
+      "url": "https://atcoder.jp/contests/ABC261/tasks/abc261_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc261_c",
