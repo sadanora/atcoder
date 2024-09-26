@@ -20,7 +20,12 @@
       "id": "abc169_b",
       "label": "B",
       "title": "Multiplication 2",
-      "url": "https://atcoder.jp/contests/ABC169/tasks/abc169_b"
+      "url": "https://atcoder.jp/contests/ABC169/tasks/abc169_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc169_c",
