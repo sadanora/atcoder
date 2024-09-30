@@ -20,13 +20,23 @@
       "id": "abc212_b",
       "label": "B",
       "title": "Weak Password",
-      "url": "https://atcoder.jp/contests/abc212/tasks/abc212_b"
+      "url": "https://atcoder.jp/contests/abc212/tasks/abc212_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc212_c",
       "label": "C",
       "title": "Min Difference",
-      "url": "https://atcoder.jp/contests/abc212/tasks/abc212_c"
+      "url": "https://atcoder.jp/contests/abc212/tasks/abc212_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc212_d",
