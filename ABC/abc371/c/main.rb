@@ -14,15 +14,23 @@ end
 n = gets.to_i
 g = input_graph(n)
 h = input_graph(n)
-a_arr = Array.new(n) { Array.new(n){0} }
-pp a_arr
+a = Array.new(n) { Array.new(n, 0) }
 (n-1).times do |i|
-  as = gets.split.map(&:to_i)
-  p as
-  as.each_with_index do |a, j|
-    a_arr[i][j] = a
-    a_arr[j][i] = a_arr[i][j]
+  gets.split.map(&:to_i).each.with_index(i+1) do |v, j|
+    a[i][j] = v
+    a[j][i] = a[i][j]
   end
 end
-pp a_arr
-# p = Array.new(n, 0)
+
+ans = []
+(0...n).to_a.permutation do |arr|
+  ans << 0
+  n.times do |i|
+    (i+1).upto(n-1) do |j|
+      next if g[i][j] == h[arr[i]][arr[j]]
+      ans[-1] += a[arr[i]][arr[j]]
+    end
+  end
+end
+
+puts ans.min
