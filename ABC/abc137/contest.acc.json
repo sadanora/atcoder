@@ -9,7 +9,12 @@
       "id": "abc137_a",
       "label": "A",
       "title": "+-x",
-      "url": "https://atcoder.jp/contests/ABC137/tasks/abc137_a"
+      "url": "https://atcoder.jp/contests/ABC137/tasks/abc137_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc137_b",
