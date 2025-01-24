@@ -9,13 +9,23 @@
       "id": "abc386_a",
       "label": "A",
       "title": "Full House 2",
-      "url": "https://atcoder.jp/contests/abc386/tasks/abc386_a"
+      "url": "https://atcoder.jp/contests/abc386/tasks/abc386_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc386_b",
       "label": "B",
       "title": "Calculator",
-      "url": "https://atcoder.jp/contests/abc386/tasks/abc386_b"
+      "url": "https://atcoder.jp/contests/abc386/tasks/abc386_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc386_c",

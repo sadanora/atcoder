@@ -1,53 +1,37 @@
-gets.to_i
+def solve?(s, t)
+  return true if s == t
+
+  s_size = s.size
+  t_size = t.size
+
+  if s_size == t_size
+    cnt = 0
+    s_size.times do |i|
+      cnt += 1 if s[i] != t[i]
+    end
+    return true if cnt <= 1
+  end
+
+  if s_size < t_size
+    s, t = t, s
+    s_size, t_size = t_size, s_size
+  end
+  return false if s_size != t_size+1
+
+  maxl = 0
+  maxr = 0
+  t_size.times do |i|
+    break if s[i] != t[i]
+    maxl += 1
+  end
+  (-1).downto(-(t_size)) do |i|
+    break if s[i] != t[i]
+    maxr += 1
+  end
+  (maxl + maxr) >= t_size ? true : false
+end
+
+gets
 s = gets.chomp.chars
 t = gets.chomp.chars
-s_size = s.size
-t_size = t.size
-
-ans = 'No'
-if s == t
-  ans = 'Yes'
-elsif s_size == t_size
-  count = 0
-  s.each_with_index do |c,i|
-    count += c != t[i] ? 1 : 0
-  end
-  ans = 'Yes' if count == 1
-elsif (s_size - t_size) == -1
-  pc = 0
-  sc = 0
-  while pc < s_size
-    if s[pc] == t[pc]
-      pc += 1
-    else
-      break
-    end
-  end
-  while sc < s_size
-    if s[s_size-1-sc] == t[t_size-1-sc]
-      sc += 1
-    else
-      break
-    end
-  end
-  ans = 'Yes' if (pc+sc)>=s_size
-elsif (s_size - t_size) == 1
-  pc = 0
-  tc = 0
-  while pc < t_size
-    if t[pc] == s[pc]
-      pc += 1
-    else
-      break
-    end
-  end
-  while tc < t_size
-    if t[t_size-1-tc] == s[s_size-1-tc]
-      tc += 1
-    else
-      break
-    end
-  end
-  ans = 'Yes' if (pc+tc)>=t_size
-end
-puts ans
+puts solve?(s, t) ? 'Yes' : 'No'
