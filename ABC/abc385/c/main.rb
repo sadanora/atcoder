@@ -1,25 +1,17 @@
 n = gets.to_i
-h = (n-1).times.map { _1 }
+arr = gets.split.map(&:to_i)
 ans = 0
-1.upto(n) do |w|
-  w.times do |si|
-    a = []
-    si.step(w, n-1) do |i|
-      a << h[i]
+1.upto(n) do |i|
+  n.times do |j|
+    count = 1
+    current = arr[j]
+    index = i + j
+    while index < n
+      break if arr[index] != current
+      count += 1
+      index += i
     end
-    val = -1
-    len = 0
-    a.each do |x|
-      if val == x
-        len += 1
-      else
-        val = x
-        len = 1
-      end
-      p [ans, len]
-      ans = [ans, len].max
-    end
+    ans = [ans, count].max
   end
 end
-
 puts ans
