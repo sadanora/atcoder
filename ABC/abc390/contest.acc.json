@@ -20,7 +20,12 @@
       "id": "abc390_b",
       "label": "B",
       "title": "Geometric Sequence",
-      "url": "https://atcoder.jp/contests/abc390/tasks/abc390_b"
+      "url": "https://atcoder.jp/contests/abc390/tasks/abc390_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc390_c",
