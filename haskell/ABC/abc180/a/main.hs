@@ -1,5 +1,7 @@
 main :: IO ()
 main = do
+  [n, a, b] <- getInts
+  print $ n-a+b
 
 {-- IO --}
 getInt :: IO Int

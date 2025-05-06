@@ -1,8 +1,9 @@
 main :: IO ()
 main = do
+  n <- readLn :: IO Int
+  print $ 5 + n
+
 
 {-- IO --}
-getInt :: IO Int
-getInt = readLn
 getInts :: IO [Int]
 getInts = map (read :: String -> Int) . words <$> getLine

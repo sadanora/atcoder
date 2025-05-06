@@ -1,5 +1,7 @@
 main :: IO ()
 main = do
+  x <- getInt
+  print $ x^3
 
 {-- IO --}
 getInt :: IO Int

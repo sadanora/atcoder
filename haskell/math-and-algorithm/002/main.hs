@@ -1,5 +1,7 @@
 main :: IO ()
 main = do
+  x <- getInts
+  print $ sum x
 
 {-- IO --}
 getInt :: IO Int
