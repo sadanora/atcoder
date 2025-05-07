@@ -3,6 +3,9 @@ import Data.List
 
 main :: IO ()
 main = do
+  [a, b, c] <- getInts
+  print $ min (b `div` a) c
+
 
 {-- IO --}
 getInt :: IO Int

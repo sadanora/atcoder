@@ -3,6 +3,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  [a, b] <- getInts
+  print $ max 0 (a-b*2)
 
 {-- IO --}
 getInt :: IO Int

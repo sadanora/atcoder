@@ -3,6 +3,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  [a,b,c,d] <- getContentsToInt
+  print $ min a b + min c d
 
 {-- IO --}
 getInt :: IO Int

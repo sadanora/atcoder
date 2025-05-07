@@ -3,6 +3,9 @@ import Data.List
 
 main :: IO ()
 main = do
+  [a, b] <- getInts
+  let [mi, ma] = sort [a+b, a-b]
+  mapM_ print [ma, mi]
 
 {-- IO --}
 getInt :: IO Int

@@ -3,6 +3,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  [n, a, b] <- getInts
+  print $ min (n*a) b
 
 {-- IO --}
 getInt :: IO Int

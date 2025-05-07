@@ -1,8 +1,9 @@
 import Data.Bool (bool)
-import Data.List
 
 main :: IO ()
 main = do
+  [m, h] <- getInts
+  printYn $ h `mod` m == 0
 
 {-- IO --}
 getInt :: IO Int

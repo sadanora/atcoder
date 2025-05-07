@@ -1,8 +1,8 @@
-import Data.Bool (bool)
-import Data.List
-
+{-# LANGUAGE BlockArguments #-}
 main :: IO ()
 main = do
+  arr <- getContentsToInt
+  putStrLn if head arr == 1 then "Hello World" else show $ sum (tail arr)
 
 {-- IO --}
 getInt :: IO Int
@@ -11,11 +11,5 @@ getInts :: IO [Int]
 getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]
 getContentsToInt = toInt <$> getContents
-
 toInt :: String -> [Int]
 toInt = map (read :: String -> Int) . words
-
-yn :: Bool -> String
-yn = bool "No" "Yes"
-printYn :: Bool -> IO ()
-printYn = putStrLn . yn
