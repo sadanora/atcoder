@@ -20,7 +20,12 @@
       "id": "joi2023_yo1b_b",
       "label": "B",
       "title": "三方比較 (Three-Way Comparison)",
-      "url": "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_b"
+      "url": "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "joi2023_yo1b_c",

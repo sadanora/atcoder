@@ -3,6 +3,15 @@ import Data.List
 
 main :: IO ()
 main = do
+  x <- getInt
+  putStrLn $ solve x
+
+solve x
+  | x >= 90 = "expert"
+  | x >= 70 = show $ 90-x
+  | x >= 40 = show $ 70-x
+  | otherwise = show $ 40-x
+
 
 {-- IO --}
 getInt :: IO Int
@@ -19,7 +28,3 @@ yn :: Bool -> String
 yn = bool "No" "Yes"
 printYn :: Bool -> IO ()
 printYn = putStrLn . yn
-
-counts :: Ord a => [a] -> [(a, Int)]
-counts = map count . group . sort
-  where count xs = (head xs, length xs)

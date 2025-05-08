@@ -3,6 +3,13 @@ import Data.List
 
 main :: IO ()
 main = do
+  y <- getInt
+  print $ solve y
+
+solve :: (Integral a1, Num a2) => a1 -> a2
+solve y = bool 365 366 $ isLeap y
+isLeap :: Integral a => a -> Bool
+isLeap y = y `mod` 400 == 0 || (y `mod` 4 == 0 && y `mod` 100 /= 0)
 
 {-- IO --}
 getInt :: IO Int
@@ -19,7 +26,3 @@ yn :: Bool -> String
 yn = bool "No" "Yes"
 printYn :: Bool -> IO ()
 printYn = putStrLn . yn
-
-counts :: Ord a => [a] -> [(a, Int)]
-counts = map count . group . sort
-  where count xs = (head xs, length xs)

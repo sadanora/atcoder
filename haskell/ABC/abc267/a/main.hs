@@ -3,6 +3,9 @@ import Data.List
 
 main :: IO ()
 main = do
+  s <- getLine
+  let wdays = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ]
+  print $ maybe 0 (5 -) $ elemIndex s wdays
 
 {-- IO --}
 getInt :: IO Int
@@ -19,7 +22,3 @@ yn :: Bool -> String
 yn = bool "No" "Yes"
 printYn :: Bool -> IO ()
 printYn = putStrLn . yn
-
-counts :: Ord a => [a] -> [(a, Int)]
-counts = map count . group . sort
-  where count xs = (head xs, length xs)

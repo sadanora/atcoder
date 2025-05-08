@@ -3,6 +3,14 @@ import Data.List
 
 main :: IO ()
 main = do
+  d <- getInt
+  putStrLn $ solve d
+
+solve :: (Eq a, Num a) => a -> String
+solve 25 = "Christmas"
+solve 24 = "Christmas Eve"
+solve 23 = "Christmas Eve Eve"
+solve 22 = "Christmas Eve Eve Eve"
 
 {-- IO --}
 getInt :: IO Int
@@ -19,7 +27,3 @@ yn :: Bool -> String
 yn = bool "No" "Yes"
 printYn :: Bool -> IO ()
 printYn = putStrLn . yn
-
-counts :: Ord a => [a] -> [(a, Int)]
-counts = map count . group . sort
-  where count xs = (head xs, length xs)

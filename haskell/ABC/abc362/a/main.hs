@@ -3,6 +3,9 @@ import Data.List
 
 main :: IO ()
 main = do
+  arr <- getInts
+  c <- getLine
+  print $ fst . head . sortOn fst $ [x | x <- zip arr ["Red", "Green", "Blue"], snd x /= c]
 
 {-- IO --}
 getInt :: IO Int

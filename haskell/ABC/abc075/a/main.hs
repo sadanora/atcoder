@@ -3,6 +3,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  arr <- getInts
+  print $ fst . head . sortOn snd $ counts arr
 
 {-- IO --}
 getInt :: IO Int

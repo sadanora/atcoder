@@ -3,6 +3,14 @@ import Data.List
 
 main :: IO ()
 main = do
+  n <- getInt
+  print $ solve n
+
+solve :: (Ord a1, Num a1, Num a2) => a1 -> a2
+solve n
+  | n >= 212 = 8
+  | n >= 126 = 6
+  | otherwise = 4
 
 {-- IO --}
 getInt :: IO Int
