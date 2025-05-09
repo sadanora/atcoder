@@ -4,6 +4,9 @@ import Data.List
 
 main :: IO ()
 main = do
+  n <- getInt
+  s <- getLine
+  printYn $ [s!!(n-1)] == ['o']
 
 {-- IO --}
 getInt :: IO Int

@@ -4,6 +4,11 @@ import Data.List
 
 main :: IO ()
 main = do
+  s <- getLine
+  [a, b] <- getInts
+  let c = s!!(a-1)
+  let d = s!!(b-1)
+  putStrLn $ take (a-1) s ++ [s!!(b-1)] ++ drop a (take (b-1) s) ++ [s!!(a-1)] ++ drop b s
 
 {-- IO --}
 getInt :: IO Int

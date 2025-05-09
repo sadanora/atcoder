@@ -4,6 +4,10 @@ import Data.List
 
 main :: IO ()
 main = do
+  s <- getLine
+  let a = read [head s] :: Int
+  let b = read [last s] :: Int
+  print $ a*b
 
 {-- IO --}
 getInt :: IO Int
@@ -13,7 +17,7 @@ getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]
 getContentsToInt = toInt <$> getContents
 
-toInt :: String -> [Int]
+-- toInt :: String -> [Int]
 toInt = map (read :: String -> Int) . words
 
 yn :: Bool -> String

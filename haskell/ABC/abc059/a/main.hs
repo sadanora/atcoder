@@ -4,6 +4,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  ss <- getLine
+  putStrLn $ map (toUpper . head) $ words ss
 
 {-- IO --}
 getInt :: IO Int

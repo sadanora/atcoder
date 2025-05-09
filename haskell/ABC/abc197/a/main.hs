@@ -4,6 +4,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  s <- getLine
+  putStrLn $ drop 1 s ++ [head s]
 
 {-- IO --}
 getInt :: IO Int

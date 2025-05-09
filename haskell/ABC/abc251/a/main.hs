@@ -4,6 +4,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  s <- getLine
+  putStrLn $ take 6 $ concat $ replicate 6 s
 
 {-- IO --}
 getInt :: IO Int

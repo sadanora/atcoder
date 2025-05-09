@@ -4,6 +4,8 @@ import Data.List
 
 main :: IO ()
 main = do
+  a <- head <$> getLine
+  putStrLn $ if ord a >= 97 then "a" else "A"
 
 {-- IO --}
 getInt :: IO Int
