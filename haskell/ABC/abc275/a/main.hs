@@ -8,8 +8,10 @@ import Text.Printf
 
 main :: IO ()
 main = do
+  getInt
+  arr <- getInts
+  print $ fst . maximumBy (comparing snd) . zip [1..] $ arr
 
-{-- IO --}
 getInt :: IO Int
 getInt = readLn
 getInts :: IO [Int]

@@ -4,12 +4,20 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  n <- readLn :: IO Double
+  [t, a] <- getDoubles
+  arr <- getDoubles
+  let idxWithDiff = zipWith (\i x -> (i, abs $ a - (t-x*0.006))) [1..] arr
+  print $ fst $ minimumBy (comparing snd) idxWithDiff
 
-{-- IO --}
+getDoubles :: IO [Double]
+getDoubles = map (read :: String -> Double) . words <$> getLine
+
 getInt :: IO Int
 getInt = readLn
 getInts :: IO [Int]

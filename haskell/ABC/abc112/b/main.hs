@@ -8,6 +8,17 @@ import Text.Printf
 
 main :: IO ()
 main = do
+  [n, t] <- getInts
+  arr <- replicateM n (toTuple <$> getInts)
+  let filtered = filter (\x -> snd x <= t) arr
+  putStrLn $ solve filtered
+
+solve :: [(Int, Int)] -> String
+solve x
+  | null x = "TLE"
+  | otherwise = show $ fst $ minimumBy (comparing fst) x
+toTuple :: [b] -> (b, b)
+toTuple [x, y] = (x, y)
 
 {-- IO --}
 getInt :: IO Int
@@ -19,8 +30,6 @@ getContentsToInt = toInt <$> getContents
 
 toInt :: String -> [Int]
 toInt = map (read :: String -> Int) . words
-toTuple :: [b] -> (b, b)
-toTuple [x, y] = (x, y)
 
 yn :: Bool -> String
 yn = bool "No" "Yes"

@@ -20,7 +20,12 @@
       "id": "abc064_b",
       "label": "B",
       "title": "Traveling AtCoDeer Problem",
-      "url": "https://atcoder.jp/contests/abc064/tasks/abc064_b"
+      "url": "https://atcoder.jp/contests/abc064/tasks/abc064_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc064_c",

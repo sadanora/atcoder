@@ -2,12 +2,14 @@ import Control.Monad
 import Data.Bool (bool)
 import Data.Char
 import Data.List
-import Data.Ord
 import Data.Maybe
 import Text.Printf
 
 main :: IO ()
 main = do
+  n <- getInt
+  arr <- map sum <$> replicateM n getInts
+  print $ maximum arr
 
 {-- IO --}
 getInt :: IO Int
@@ -19,8 +21,6 @@ getContentsToInt = toInt <$> getContents
 
 toInt :: String -> [Int]
 toInt = map (read :: String -> Int) . words
-toTuple :: [b] -> (b, b)
-toTuple [x, y] = (x, y)
 
 yn :: Bool -> String
 yn = bool "No" "Yes"

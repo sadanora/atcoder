@@ -4,12 +4,16 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  [n,p,q] <- getInts
+  arr <- getInts
+  let qd = minimum arr + q
+  print $ min p qd
 
-{-- IO --}
 getInt :: IO Int
 getInt = readLn
 getInts :: IO [Int]

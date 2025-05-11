@@ -4,12 +4,16 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  n <- getInt
+  arr <- getContentsToInt
+  let m = maximum arr
+  print $ sum arr - m `div` 2
 
-{-- IO --}
 getInt :: IO Int
 getInt = readLn
 getInts :: IO [Int]

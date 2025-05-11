@@ -20,7 +20,12 @@
       "id": "abc112_b",
       "label": "B",
       "title": "Time Limit Exceeded",
-      "url": "https://atcoder.jp/contests/abc112/tasks/abc112_b"
+      "url": "https://atcoder.jp/contests/abc112/tasks/abc112_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc112_c",

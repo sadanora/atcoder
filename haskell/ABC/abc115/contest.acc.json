@@ -20,7 +20,12 @@
       "id": "abc115_b",
       "label": "B",
       "title": "Christmas Eve Eve",
-      "url": "https://atcoder.jp/contests/abc115/tasks/abc115_b"
+      "url": "https://atcoder.jp/contests/abc115/tasks/abc115_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc115_c",
