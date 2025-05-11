@@ -20,7 +20,12 @@
       "id": "abc184_b",
       "label": "B",
       "title": "Quizzes",
-      "url": "https://atcoder.jp/contests/abc184/tasks/abc184_b"
+      "url": "https://atcoder.jp/contests/abc184/tasks/abc184_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc184_c",
