@@ -4,12 +4,15 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  n <- readLn :: IO Int
+  arr <- getInts
+  printYn $ all (== head arr) arr
 
-{-- IO --}
 getInts :: IO [Int]
 getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]

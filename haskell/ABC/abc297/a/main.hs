@@ -4,12 +4,22 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  [n, d] <- getInts
+  arr <- getInts
+  print $ rec arr d
 
-{-- IO --}
+rec [] _ = -1
+rec [_] _ = -1
+rec (x:y:xs) d
+  | y - x <= d = y
+  | otherwise = rec (y:xs) d
+
+
 getInts :: IO [Int]
 getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]

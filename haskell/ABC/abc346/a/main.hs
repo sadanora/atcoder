@@ -4,12 +4,17 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  n <- getInt
+  arr <- getInts
+  putStrLn $ unwords $ map show $ zipWith (*) arr (tail arr)
 
-{-- IO --}
+getInt :: IO Int
+getInt = readLn
 getInts :: IO [Int]
 getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]

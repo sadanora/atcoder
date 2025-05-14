@@ -4,12 +4,17 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  n <- readLn :: IO Int
+  arr <- words <$> getContents
+  let l = length arr - 2
+  let t = take l $ zip arr $ tail arr
+  printYn $ maybe True (\i -> i + 2 == length arr) (elemIndex ("sweet", "sweet") t)
 
-{-- IO --}
 getInts :: IO [Int]
 getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]

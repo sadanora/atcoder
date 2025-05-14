@@ -4,12 +4,17 @@ import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
+import qualified Data.Set as Set
 import Text.Printf
 
 main :: IO ()
 main = do
+  _ <- getInt
+  s <- getLine
+  printYn $ any (`elem` [('a','b'), ('b','a')]) $ zip s (tail s)
 
-{-- IO --}
+getInt :: IO Int
+getInt = readLn
 getInts :: IO [Int]
 getInts = toInt <$> getLine
 getContentsToInt :: IO [Int]
