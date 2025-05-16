@@ -810,7 +810,12 @@
       "id": "tessoku_book_ey",
       "label": "C01",
       "title": "Tax Rate",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ey"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ey",
+      "directory": {
+        "path": "c01",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "tessoku_book_ez",
