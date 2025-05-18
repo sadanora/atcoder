@@ -20,7 +20,12 @@
       "id": "abc145_b",
       "label": "B",
       "title": "Echo",
-      "url": "https://atcoder.jp/contests/abc145/tasks/abc145_b"
+      "url": "https://atcoder.jp/contests/abc145/tasks/abc145_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc145_c",
