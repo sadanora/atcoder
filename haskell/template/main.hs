@@ -1,22 +1,22 @@
+import qualified Data.ByteString.Char8 as BS
 import Control.Monad
 import Data.Bool (bool)
 import Data.Char
 import Data.List
 import Data.Ord
 import Data.Maybe
-import Text.Printf
 
 main :: IO ()
 main = do
 
 {-- IO --}
 getInts :: IO [Int]
-getInts = toInt <$> getLine
+getInts = toInt <$> BS.getLine
 getContentsToInt :: IO [Int]
-getContentsToInt = toInt <$> getContents
+getContentsToInt = toInt <$> BS.getContents
 
 toInt :: String -> [Int]
-toInt = map (read :: String -> Int) . words
+toInt = map (read . BS.unpack) . BS.words
 toTuple :: [b] -> (b, b)
 toTuple [x, y] = (x, y)
 
