@@ -9,7 +9,12 @@
       "id": "abc179_a",
       "label": "A",
       "title": "Plural Form",
-      "url": "https://atcoder.jp/contests/abc179/tasks/abc179_a"
+      "url": "https://atcoder.jp/contests/abc179/tasks/abc179_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc179_b",
