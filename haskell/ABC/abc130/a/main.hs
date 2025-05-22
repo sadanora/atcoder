@@ -8,6 +8,8 @@ import Data.Maybe
 
 main :: IO ()
 main = do
+  [x, a] <- getInts
+  print $ bool 10 0(x < a)
 
 {-- IO --}
 getInt :: IO Int

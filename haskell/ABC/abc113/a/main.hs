@@ -8,6 +8,8 @@ import Data.Maybe
 
 main :: IO ()
 main = do
+  [x, y] <- getInts
+  print $ x + y `div` 2
 
 {-- IO --}
 getInt :: IO Int
