@@ -20,7 +20,12 @@
       "id": "abc049_b",
       "label": "B",
       "title": "Thin",
-      "url": "https://atcoder.jp/contests/abc049/tasks/abc049_b"
+      "url": "https://atcoder.jp/contests/abc049/tasks/abc049_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "arc065_a",

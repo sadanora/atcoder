@@ -20,7 +20,12 @@
       "id": "abc186_b",
       "label": "B",
       "title": "Blocks on Grid",
-      "url": "https://atcoder.jp/contests/abc186/tasks/abc186_b"
+      "url": "https://atcoder.jp/contests/abc186/tasks/abc186_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc186_c",

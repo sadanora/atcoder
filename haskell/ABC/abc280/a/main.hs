@@ -1,33 +1,21 @@
+import qualified Data.ByteString.Char8 as BS
+import qualified Data.Vector as V
 import Control.Monad
-import Data.Bool (bool)
-import Data.Char
-import Data.List
-import Data.Ord
-import Data.Maybe
-import qualified Data.Set as Set
-import Text.Printf
 
 main :: IO ()
 main = do
   [h, w] <- getInts
-  arr <- replicateM h getLine
-  print $ length [y | x <- arr, y <- x, y == '#']
+  arr <- replicateM h BS.getLine
+  let grid :: V.Vector (V.Vector Char)
+      grid = V.fromList $ map (V.fromList . BS.unpack) arr
+  print $ V.sum $ V.map (V.length . V.filter (=='#')) grid
 
+getInt :: IO Int
+getInt = read . BS.unpack <$> BS.getLine
 getInts :: IO [Int]
-getInts = toInt <$> getLine
-getContentsToInt :: IO [Int]
-getContentsToInt = toInt <$> getContents
+getInts = toInt <$> BS.getLine
 
-toInt :: String -> [Int]
-toInt = map (read :: String -> Int) . words
+toInt :: BS.ByteString -> [Int]
+toInt = map (read . BS.unpack) . BS.words
 toTuple :: [b] -> (b, b)
 toTuple [x, y] = (x, y)
-
-yn :: Bool -> String
-yn = bool "No" "Yes"
-printYn :: Bool -> IO ()
-printYn = putStrLn . yn
-
-counts :: Ord a => [a] -> [(a, Int)]
-counts = map count . group . sort
-  where count xs = (head xs, length xs)
