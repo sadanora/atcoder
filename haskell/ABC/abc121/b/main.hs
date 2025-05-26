@@ -5,11 +5,10 @@ import Control.Monad
 
 main :: IO ()
 main = do
-  [h, w] <- getInts
-  grid <- getIntGrid h
-  let m = V.minimum $ V.concatMap id grid
-      s = V.map (\row -> V.map (\x -> x - m) row) grid
-  print $ V.sum $ V.concatMap id s
+  [n, m, c] <- getInts
+  vb <- V.fromList . toInt <$> BS.getLine
+  va <- getIntGrid n
+  print . length . V.filter (\row -> (V.sum $ V.zipWith (*) row vb) + c > 0) $ va
 
 getInts :: IO [Int]
 getInts = toInt <$> BS.getLine
