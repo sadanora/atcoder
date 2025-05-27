@@ -26,7 +26,12 @@
       "id": "joi2021_yo1c_c",
       "label": "C",
       "title": "比較 (Comparison)",
-      "url": "https://atcoder.jp/contests/joi2021yo1c/tasks/joi2021_yo1c_c"
+      "url": "https://atcoder.jp/contests/joi2021yo1c/tasks/joi2021_yo1c_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     }
   ]
 }
