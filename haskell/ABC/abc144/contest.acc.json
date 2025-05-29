@@ -20,7 +20,12 @@
       "id": "abc144_b",
       "label": "B",
       "title": "81",
-      "url": "https://atcoder.jp/contests/abc144/tasks/abc144_b"
+      "url": "https://atcoder.jp/contests/abc144/tasks/abc144_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc144_c",

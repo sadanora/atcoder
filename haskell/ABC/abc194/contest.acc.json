@@ -20,7 +20,12 @@
       "id": "abc194_b",
       "label": "B",
       "title": "Job Assignment",
-      "url": "https://atcoder.jp/contests/abc194/tasks/abc194_b"
+      "url": "https://atcoder.jp/contests/abc194/tasks/abc194_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc194_c",
