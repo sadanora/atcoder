@@ -20,7 +20,12 @@
       "id": "abc130_b",
       "label": "B",
       "title": "Bounding",
-      "url": "https://atcoder.jp/contests/abc130/tasks/abc130_b"
+      "url": "https://atcoder.jp/contests/abc130/tasks/abc130_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc130_c",

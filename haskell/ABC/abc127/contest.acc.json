@@ -20,7 +20,12 @@
       "id": "abc127_b",
       "label": "B",
       "title": "Algae",
-      "url": "https://atcoder.jp/contests/abc127/tasks/abc127_b"
+      "url": "https://atcoder.jp/contests/abc127/tasks/abc127_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc127_c",
