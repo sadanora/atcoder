@@ -20,7 +20,12 @@
       "id": "abc152_b",
       "label": "B",
       "title": "Comparing Strings",
-      "url": "https://atcoder.jp/contests/abc152/tasks/abc152_b"
+      "url": "https://atcoder.jp/contests/abc152/tasks/abc152_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc152_c",

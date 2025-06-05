@@ -20,7 +20,12 @@
       "id": "abc202_b",
       "label": "B",
       "title": "180°",
-      "url": "https://atcoder.jp/contests/abc202/tasks/abc202_b"
+      "url": "https://atcoder.jp/contests/abc202/tasks/abc202_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc202_c",
