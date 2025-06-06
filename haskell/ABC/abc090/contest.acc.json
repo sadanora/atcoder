@@ -20,7 +20,12 @@
       "id": "abc090_b",
       "label": "B",
       "title": "Palindromic Numbers",
-      "url": "https://atcoder.jp/contests/abc090/tasks/abc090_b"
+      "url": "https://atcoder.jp/contests/abc090/tasks/abc090_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "arc091_a",
