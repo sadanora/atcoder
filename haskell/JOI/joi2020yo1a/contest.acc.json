@@ -1,0 +1,32 @@
+{
+  "contest": {
+    "id": "joi2020yo1a",
+    "title": "JOI 2019/2020 一次予選 (第1回) 過去問",
+    "url": "https://atcoder.jp/contests/joi2020yo1a"
+  },
+  "tasks": [
+    {
+      "id": "joi2020_yo1a_a",
+      "label": "A",
+      "title": "3 つの整数 (Three Integers)",
+      "url": "https://atcoder.jp/contests/joi2020yo1a/tasks/joi2020_yo1a_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
+    },
+    {
+      "id": "joi2020_yo1a_b",
+      "label": "B",
+      "title": "母音を数える (Counting Vowels)",
+      "url": "https://atcoder.jp/contests/joi2020yo1a/tasks/joi2020_yo1a_b"
+    },
+    {
+      "id": "joi2020_yo1a_c",
+      "label": "C",
+      "title": "マージ (Merge)",
+      "url": "https://atcoder.jp/contests/joi2020yo1a/tasks/joi2020_yo1a_c"
+    }
+  ]
+}
