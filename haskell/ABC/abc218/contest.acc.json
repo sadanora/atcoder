@@ -20,7 +20,12 @@
       "id": "abc218_b",
       "label": "B",
       "title": "qwerty",
-      "url": "https://atcoder.jp/contests/abc218/tasks/abc218_b"
+      "url": "https://atcoder.jp/contests/abc218/tasks/abc218_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc218_c",
