@@ -9,7 +9,12 @@
       "id": "abc210_a",
       "label": "A",
       "title": "Cabbages",
-      "url": "https://atcoder.jp/contests/abc210/tasks/abc210_a"
+      "url": "https://atcoder.jp/contests/abc210/tasks/abc210_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc210_b",
