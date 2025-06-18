@@ -9,7 +9,12 @@
       "id": "abc206_a",
       "label": "A",
       "title": "Maxi-Buying",
-      "url": "https://atcoder.jp/contests/abc206/tasks/abc206_a"
+      "url": "https://atcoder.jp/contests/abc206/tasks/abc206_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc206_b",
