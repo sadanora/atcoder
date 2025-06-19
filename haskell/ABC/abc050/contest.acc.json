@@ -20,7 +20,12 @@
       "id": "abc050_b",
       "label": "B",
       "title": "Contest with Drinks Easy",
-      "url": "https://atcoder.jp/contests/abc050/tasks/abc050_b"
+      "url": "https://atcoder.jp/contests/abc050/tasks/abc050_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "arc066_a",

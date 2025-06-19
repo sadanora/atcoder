@@ -32,7 +32,12 @@
       "id": "joi2022_yo1a_d",
       "label": "D",
       "title": "箱と鍵 (Boxes and Keys)",
-      "url": "https://atcoder.jp/contests/joi2022yo1a/tasks/joi2022_yo1a_d"
+      "url": "https://atcoder.jp/contests/joi2022yo1a/tasks/joi2022_yo1a_d",
+      "directory": {
+        "path": "d",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     }
   ]
 }

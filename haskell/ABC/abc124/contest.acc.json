@@ -20,7 +20,12 @@
       "id": "abc124_b",
       "label": "B",
       "title": "Great Ocean View",
-      "url": "https://atcoder.jp/contests/abc124/tasks/abc124_b"
+      "url": "https://atcoder.jp/contests/abc124/tasks/abc124_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc124_c",
