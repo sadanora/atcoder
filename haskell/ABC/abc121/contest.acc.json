@@ -9,7 +9,12 @@
       "id": "abc121_a",
       "label": "A",
       "title": "White Cells",
-      "url": "https://atcoder.jp/contests/abc121/tasks/abc121_a"
+      "url": "https://atcoder.jp/contests/abc121/tasks/abc121_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc121_b",
