@@ -9,7 +9,12 @@
       "id": "abc029_a",
       "label": "A",
       "title": "複数形",
-      "url": "https://atcoder.jp/contests/abc029/tasks/abc029_a"
+      "url": "https://atcoder.jp/contests/abc029/tasks/abc029_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc029_b",
