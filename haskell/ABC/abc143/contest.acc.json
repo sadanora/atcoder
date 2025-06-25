@@ -20,7 +20,12 @@
       "id": "abc143_b",
       "label": "B",
       "title": "TAKOYAKI FESTIVAL 2019",
-      "url": "https://atcoder.jp/contests/abc143/tasks/abc143_b"
+      "url": "https://atcoder.jp/contests/abc143/tasks/abc143_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc143_c",
