@@ -20,7 +20,12 @@
       "id": "abc084_b",
       "label": "B",
       "title": "Postal Code",
-      "url": "https://atcoder.jp/contests/abc084/tasks/abc084_b"
+      "url": "https://atcoder.jp/contests/abc084/tasks/abc084_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc084_c",

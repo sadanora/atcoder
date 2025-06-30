@@ -20,7 +20,12 @@
       "id": "abc209_b",
       "label": "B",
       "title": "Can you buy them all?",
-      "url": "https://atcoder.jp/contests/abc209/tasks/abc209_b"
+      "url": "https://atcoder.jp/contests/abc209/tasks/abc209_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc209_c",

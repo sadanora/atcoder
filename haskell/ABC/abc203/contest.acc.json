@@ -20,7 +20,12 @@
       "id": "abc203_b",
       "label": "B",
       "title": "AtCoder Condominium",
-      "url": "https://atcoder.jp/contests/abc203/tasks/abc203_b"
+      "url": "https://atcoder.jp/contests/abc203/tasks/abc203_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc203_c",
