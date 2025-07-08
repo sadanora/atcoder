@@ -237,7 +237,12 @@
       "id": "math_and_algorithm_af",
       "label": "034",
       "title": "Nearest Points",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_af"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_af",
+      "directory": {
+        "path": "034",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "math_and_algorithm_ag",
