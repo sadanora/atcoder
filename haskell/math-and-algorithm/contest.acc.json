@@ -584,7 +584,12 @@
       "id": "math_and_algorithm_br",
       "label": "091",
       "title": "How Many Ways?",
-      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_br"
+      "url": "https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_br",
+      "directory": {
+        "path": "091",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "math_and_algorithm_bs",
