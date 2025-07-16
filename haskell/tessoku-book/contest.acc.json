@@ -491,7 +491,12 @@
       "id": "tessoku_book_cb",
       "label": "B03",
       "title": "Supermarket 1",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cb"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cb",
+      "directory": {
+        "path": "b03",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "tessoku_book_cc",
