@@ -20,7 +20,12 @@
       "id": "abc066_b",
       "label": "B",
       "title": "ss",
-      "url": "https://atcoder.jp/contests/abc066/tasks/abc066_b"
+      "url": "https://atcoder.jp/contests/abc066/tasks/abc066_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "arc077_a",
