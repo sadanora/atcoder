@@ -20,7 +20,12 @@
       "id": "abc105_b",
       "label": "B",
       "title": "Cakes and Donuts",
-      "url": "https://atcoder.jp/contests/abc105/tasks/abc105_b"
+      "url": "https://atcoder.jp/contests/abc105/tasks/abc105_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc105_c",
