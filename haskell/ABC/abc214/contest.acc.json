@@ -20,7 +20,12 @@
       "id": "abc214_b",
       "label": "B",
       "title": "How many?",
-      "url": "https://atcoder.jp/contests/abc214/tasks/abc214_b"
+      "url": "https://atcoder.jp/contests/abc214/tasks/abc214_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc214_c",
