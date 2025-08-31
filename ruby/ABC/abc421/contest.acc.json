@@ -31,7 +31,12 @@
       "id": "abc421_c",
       "label": "C",
       "title": "Alternated",
-      "url": "https://atcoder.jp/contests/abc421/tasks/abc421_c"
+      "url": "https://atcoder.jp/contests/abc421/tasks/abc421_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc421_d",
