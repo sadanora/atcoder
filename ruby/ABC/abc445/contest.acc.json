@@ -1,0 +1,66 @@
+{
+  "contest": {
+    "id": "abc445",
+    "title": "AtCoder Beginner Contest 445",
+    "url": "https://atcoder.jp/contests/abc445"
+  },
+  "tasks": [
+    {
+      "id": "abc445_a",
+      "label": "A",
+      "title": "Strong Word",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
+    },
+    {
+      "id": "abc445_b",
+      "label": "B",
+      "title": "Center Alignment",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
+    },
+    {
+      "id": "abc445_c",
+      "label": "C",
+      "title": "Sugoroku Destination",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
+    },
+    {
+      "id": "abc445_d",
+      "label": "D",
+      "title": "Reconstruct Chocolate",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_d"
+    },
+    {
+      "id": "abc445_e",
+      "label": "E",
+      "title": "Many LCMs",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_e"
+    },
+    {
+      "id": "abc445_f",
+      "label": "F",
+      "title": "Exactly K Steps 2",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_f"
+    },
+    {
+      "id": "abc445_g",
+      "label": "G",
+      "title": "Knight Placement",
+      "url": "https://atcoder.jp/contests/abc445/tasks/abc445_g"
+    }
+  ]
+}

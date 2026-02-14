@@ -31,7 +31,12 @@
       "id": "abc443_c",
       "label": "C",
       "title": "Chokutter Addiction",
-      "url": "https://atcoder.jp/contests/abc443/tasks/abc443_c"
+      "url": "https://atcoder.jp/contests/abc443/tasks/abc443_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.hs"
+      }
     },
     {
       "id": "abc443_d",
