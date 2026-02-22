@@ -1,17 +1,11 @@
-N, Q = gets.split.map(&:to_i)
-S = gets.chomp
-cs = [0] * (N+1)
-cnt = 0
-N.times{|i|
-  a = S[i-1..i] == 'AC' ? 1 : 0
-  cs[i+1] = cs[i] + a
-  # if S[i] == 'A' && S[i+1] == 'C'
-  #   cnt += 1
-  #   cs[i+1] = cnt
-  # end
-}
-# p cs
-Q.times{
+n, q = gets.split.map(&:to_i)
+s = gets.chomp
+cs = Array.new(n+1, 0)
+(1...n).each do |i|
+  cs[i+1] = (s[i-1] == 'A' && s[i] == 'C') ? cs[i] + 1 : cs[i]
+end
+q.times do
   l, r = gets.split.map(&:to_i)
   puts cs[r] - cs[l]
-}
+end
+
