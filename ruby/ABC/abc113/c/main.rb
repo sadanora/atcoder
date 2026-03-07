@@ -1,13 +1,13 @@
 n, m = gets.split.map(&:to_i)
-ary = Array.new(n+1){[]}
-m.times do |i|
-  p, y = gets.split.map(&:to_i)
-  ary[p] << [y, i]
+prefs = Array.new(n+1) { [] }
+m.times do |pos|
+  pref, year = gets.split.map(&:to_i)
+  prefs[pref] << [year, pos]
 end
-ans = []
-ary.each_with_index do |pref, i|
-  pref.sort_by { _1[0] }.each_with_index do |c, j|
-    ans[c[1]] = "#{i.to_s.rjust(6, '0')}#{(j+1).to_s.rjust(6, '0')}"
+ans = Array.new(m)
+(1..n).each do |i|
+  prefs[i].sort!.each_with_index do |(_, pos), j|
+    ans[pos] = sprintf("%06d%06d", i, j+1)
   end
 end
 puts ans
