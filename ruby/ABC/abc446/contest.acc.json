@@ -31,7 +31,12 @@
       "id": "abc446_c",
       "label": "C",
       "title": "Omelette Restaurant",
-      "url": "https://atcoder.jp/contests/abc446/tasks/abc446_c"
+      "url": "https://atcoder.jp/contests/abc446/tasks/abc446_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc446_d",
