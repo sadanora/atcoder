@@ -11,9 +11,9 @@ t.each do |r|
 
   r.sort!.reverse!
   top << r[0]
-  tail += r[1..] || []
+  tail.concat(r[1..]) if r.size > 1
 end
 top.sort!.reverse!
-tail += top[m..] || []
+tail.concat(top[m..]) if m < top.size
 tail.sort!.reverse!
 puts top[...m].sum + tail[...k-m].sum
