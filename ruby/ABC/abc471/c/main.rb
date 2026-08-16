@@ -1,20 +1,23 @@
 n = gets.to_i
-arr = gets.split.map(&:to_i)
-poss, negs = arr.partition { _1.positive? }
-poss = poss.sort
-negs = negs.sort { _2 <=> _1 }
+rs, ls = gets.split.map(&:to_i).partition { _1.positive? }
+rs.sort!
+ls.sort!.reverse!
+INF = 10**18
+rs << INF
+ls << -INF
+x = 0
 ans = 0
-cur_position = 0
-while !poss.empty? && !negs.empty?
-  pos = (poss[0] - cur_position).abs
-  neg = (negs[0] - cur_position).abs
-  t = neg <= pos ? negs.shift : poss.shift
-  ans += (cur_position-t).abs
-  cur_position = t
-end
-if poss.empty?
-  ans += (negs[-1] - cur_position).abs
-else
-  ans += (poss[-1] - cur_position).abs
+n.times do
+  r = rs[0]
+  l = ls[0]
+  if (x-l <= r-x)
+    ans += x-l
+    x = l
+    ls.shift
+  else
+    ans += r-x
+    x = r
+    rs.shift
+  end
 end
 p ans
