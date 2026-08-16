@@ -42,7 +42,12 @@
       "id": "abc471_d",
       "label": "D",
       "title": "Chargers",
-      "url": "https://atcoder.jp/contests/abc471/tasks/abc471_d"
+      "url": "https://atcoder.jp/contests/abc471/tasks/abc471_d",
+      "directory": {
+        "path": "d",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc471_e",
