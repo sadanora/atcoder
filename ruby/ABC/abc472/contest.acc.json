@@ -42,7 +42,12 @@
       "id": "abc472_d",
       "label": "D",
       "title": "Bomber Mad",
-      "url": "https://atcoder.jp/contests/abc472/tasks/abc472_d"
+      "url": "https://atcoder.jp/contests/abc472/tasks/abc472_d",
+      "directory": {
+        "path": "d",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc472_e",
