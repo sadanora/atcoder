@@ -1,0 +1,5 @@
+# Direct dependencies; requirements.lock also pins their transitive dependencies.
+online-judge-tools==11.5.1
+online-judge-api-client==10.10.1
+# oj imports distutils, which Python >= 3.12 no longer includes.
+setuptools==84.0.0

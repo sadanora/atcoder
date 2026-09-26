@@ -1,0 +1,10 @@
+# {file} is substituted as one command argument, with shell quoting by ojt.
+[languages.ruby]
+submit = "main.rb"
+template = "templates/ruby/main.rb"
+command = ["ruby", "{file}"]
+
+[languages.haskell]
+submit = "main.hs"
+template = "templates/haskell/main.hs"
+command = ["stack", "script", "--resolver", "lts-22", "--package", "bytestring", "--package", "vector", "--package", "containers", "{file}"]

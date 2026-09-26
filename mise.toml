@@ -1,2 +1,13 @@
 [tools]
-python = "latest"
+python = "3.14.7"
+
+[env]
+_.path = ["{{config_root}}/bin", "{{config_root}}/.venv/bin"]
+
+[tasks.setup]
+description = "Install the pinned oj environment"
+run = "bash scripts/setup.sh"
+
+[tasks.check]
+description = "Run offline CLI and oj integration tests"
+run = "python -m unittest discover -s tests -v"
