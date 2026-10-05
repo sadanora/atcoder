@@ -26,7 +26,12 @@
       "id": "abc220_c",
       "label": "C",
       "title": "Long Sequence",
-      "url": "https://atcoder.jp/contests/ABC220/tasks/abc220_c"
+      "url": "https://atcoder.jp/contests/ABC220/tasks/abc220_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc220_d",
