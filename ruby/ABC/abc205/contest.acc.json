@@ -26,7 +26,12 @@
       "id": "abc205_c",
       "label": "C",
       "title": "POW",
-      "url": "https://atcoder.jp/contests/ABC205/tasks/abc205_c"
+      "url": "https://atcoder.jp/contests/ABC205/tasks/abc205_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc205_d",
