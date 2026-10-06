@@ -1,56 +1,52 @@
-個人用の問題・解答管理リポジトリ。`acc` は独自実装、サンプル取得とテストには `oj` を使用。
+## Setup
 
-## セットアップ
+Run from the repository root with `mise activate` configured in your shell.
+Install language runtimes such as Ruby or Haskell separately.
 
-以下をリポジトリのルートで実行。シェルは `mise activate` 設定済みを前提とする。
 ```bash
 mise trust
 mise install
 mise run setup
 ```
 
-Ruby、Haskell などのランタイムは別途インストールが必要。
-
-## 問題取得
+## Download problems
 
 ```bash
 cd ruby/ABC
-acc new abc100               # 問題を対話選択
-# 選択を省略する場合: acc new abc100 --tasks a b / acc new abc100 --all
+acc new abc100               # Select tasks interactively
+acc new abc100 --tasks a b   # Download specific tasks
+acc new abc100 --all         # Download all tasks
 
 cd abc100/a
-acc add                     # 未取得の問題を対話選択
-# 選択を省略する場合: acc add --tasks c d / acc add --all
+acc add                      # Select remaining tasks interactively
+acc add --tasks c d          # Download specific remaining tasks
+acc add --all                # Download all remaining tasks
 ```
 
-実行位置に `abc100/a/main.rb`・`abc100/a/test/` などを作成する。
-`ruby/`・`haskell/` 配下では言語を自動判定。
+## Test solutions
 
-## テスト
-
-問題ディレクトリで実行。
+Run from a problem directory. Options after `--` are passed to `oj test`.
 
 ```bash
-ojt                         # main.rb / main.hs をテスト
-ojt --file main2.rb          # ファイル指定
-ojt -- -t 5                 # 制限時間5秒
-ojt -- -e 1e-6              # 誤差許容値
+ojt                          # Test main.rb or main.hs
+ojt --file main2.rb          # Test a specific file
+ojt -- -t 5                  # Set a 5-second time limit
+ojt -- -e 1e-6               # Set the error tolerance
 ```
 
-`--` 以降は `oj test` のオプション。ケースごとの出力も `oj` に任せる。
-
-## 認証
+## Authentication
 
 ```bash
-acc login                   # Cookie を取り込む
-acc session                 # ログイン状態を確認
+acc login                   # Import a session cookie
+acc session                 # Check login status
 ```
 
-- 公開済みの過去問取得では通常ログイン操作は不要のはず。
-- コンテスト中などログインセッションが必要な場合は`acc login` でブラウザを開き、ログイン後に開発者ツールのCookiesから `REVEL_SESSION` の値をコピーしてターミナルで貼り付ける。
+When a login session is required, run `acc login`, sign in through the browser,
+copy the `REVEL_SESSION` cookie value from the browser's developer tools,
+and paste it into the terminal.
 
-## 設定・動作確認
+## Configuration and checks
 
-- 言語ごとの実行方法: `atcoder.toml`
-- 言語ごとのテンプレート: `templates/`
-- CLI のテスト: `mise run check`
+- Per-language execution settings: `atcoder.toml`
+- Per-language templates: `templates/`
+- CLI tests: `mise run check` (run from the repository root)
