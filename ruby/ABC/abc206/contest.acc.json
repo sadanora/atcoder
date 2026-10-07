@@ -31,7 +31,12 @@
       "id": "abc206_c",
       "label": "C",
       "title": "Swappable",
-      "url": "https://atcoder.jp/contests/ABC206/tasks/abc206_c"
+      "url": "https://atcoder.jp/contests/ABC206/tasks/abc206_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc206_d",
