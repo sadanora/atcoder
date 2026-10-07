@@ -26,7 +26,12 @@
       "id": "abc215_c",
       "label": "C",
       "title": "One More aab aba baa",
-      "url": "https://atcoder.jp/contests/ABC215/tasks/abc215_c"
+      "url": "https://atcoder.jp/contests/ABC215/tasks/abc215_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
     },
     {
       "id": "abc215_d",
