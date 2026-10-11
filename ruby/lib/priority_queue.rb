@@ -81,9 +81,9 @@ class PriorityQueue
     bubble_up(start_pos, pos)
   end
 
-  def bubble_up(star_pos, pos)
+  def bubble_up(start_pos, pos)
     new_item = @heap[pos]
-    while pos > star_pos
+    while pos > start_pos
       parent_pos = (pos - 1) >> 1
       parent = @heap[parent_pos]
       break if @comp.call(parent, new_item)
