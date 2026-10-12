@@ -1,0 +1,66 @@
+{
+  "contest": {
+    "id": "abc479",
+    "title": "オムロンプログラミングコンテスト2026 （AtCoder Beginner Contest 479）",
+    "url": "https://atcoder.jp/contests/abc479"
+  },
+  "tasks": [
+    {
+      "id": "abc479_a",
+      "label": "A",
+      "title": "Odd Index Sum",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
+    },
+    {
+      "id": "abc479_b",
+      "label": "B",
+      "title": "Longest Rainy Streak",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
+    },
+    {
+      "id": "abc479_c",
+      "label": "C",
+      "title": "Bento Packing",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_c",
+      "directory": {
+        "path": "c",
+        "testdir": "test",
+        "submit": "main.rb"
+      }
+    },
+    {
+      "id": "abc479_d",
+      "label": "D",
+      "title": "Back and Forth Distance",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_d"
+    },
+    {
+      "id": "abc479_e",
+      "label": "E",
+      "title": "Cut and Add",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_e"
+    },
+    {
+      "id": "abc479_f",
+      "label": "F",
+      "title": "Narrow Passage",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_f"
+    },
+    {
+      "id": "abc479_g",
+      "label": "G",
+      "title": "Tuning",
+      "url": "https://atcoder.jp/contests/abc479/tasks/abc479_g"
+    }
+  ]
+}
